@@ -46,7 +46,7 @@ screen -r Server
 * Detach the Session
 > Press `CTRL + A` then press `D` 
 ## Join your Server
-* Connect your Server using Playit
+* Connect to your Server using Playit
 ```
 screen -r tunnel
 ```

@@ -1,4 +1,4 @@
-# Minecraft Server on Google Clou
+# Minecraft Server on Google Cloud
 In this Project, I will teach you the way to host your Minecraft Server on Google Cloud.
 
 **Features :**

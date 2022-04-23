@@ -12,7 +12,7 @@ In this Project, I will teach you the way to host your Minecraft Server on Googl
 * [**PLAYIT.GG**](https://playit.gg)
 * [**Google Cloud**](https://cloud.google.com)
 
-## Guide to Setup your Minecraft Server
+## Setup your Minecraft Server
 * Activate a [Google Cloud Shell](https://console.cloud.google.com)
 * Clone this Github Project into the Console
 ```

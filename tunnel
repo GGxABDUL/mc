@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e
+export server=$PWD
+chmod +x *
+cd $server
+
+# Port Forwarding Tools
+echo "Port Forwarding your Server via Playit.GG...."
+screen -L ./playit

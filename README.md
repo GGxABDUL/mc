@@ -83,7 +83,7 @@ cd ..
 ./uninstall
 ```
 ## Keep your Server Online
-> There are only **ONE** way to keep your Server Online. You have to keep the site **OPEN** or the Shell will **STOP**!
+> There are only **ONE** way to keep your Server Online. You have to keep the website **OPEN** or the Shell will **STOP**!
 
 ## CREDIT
 * > Owner of this Code - [NiXE xD](https://www.youtube.com/channel/UCK9F2ptByYjY4UOqMn4UXNQ)

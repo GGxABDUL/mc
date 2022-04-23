@@ -1,0 +1,59 @@
+#!/bin/bash
+server=$PWD
+cd $server
+set -e
+chmod +x *
+mkdir mcserver
+
+#Installing Variables
+apt update && apt upgrade && pkg update && pkg upgrade
+sudo apt install -y -qq wget screen default-jdk ssh unzip python3.10
+
+# Install Bpytop
+python3 pip install bpytop
+
+# Choose Server
+echo "Please Choose what Server that you want to Install"
+selectServer=1
+read selectServer
+echo "Type [1] for Minecraft Java Server"
+echo "Type [2] for Minecraft Bedrock Server"
+
+# Install Server
+if [[ -z selectServer ]]; then
+  echo "Wrong Choice. Please try again"
+  clear
+  ./setup
+#Execute When the User want to Install Java Server
+
+elif [[ -z selectServer == 1 ]]; then
+  echo "Please Type the Version of Minecraft Java Server that you want :"
+  read VERSION
+  echo "Installing Minecraft Java Server.."
+  wget -O server.jar https://launcher.mojang.com/v1/objects/$VERSION/server.jar
+  touch eula.txt
+  echo "eula=true" > eula.txt
+  mv server.jar mcserver && mv eula.txt mcserver
+#Execute When the User want to Install Bedrock Server
+
+elif [[ -z selectServer == 2]]; then
+  echo "Please Type the Version of Minecraft Bedrock Edition Server that you want :"
+  read version
+  echo "Installing Minecraft Bedrock Server.."
+  wget -O server.zip https://minecraft.azureedge.net/bin-linux/bedrock-server-$version.zip
+  touch eula.txt
+  echo "eula=true" > eula.txt
+  mv server.zip mcserver && mv eula.txt mcserver
+  cd mcserver
+  unzip server.zip
+  cd ..
+  cd $server
+
+# Execute when the User doesn't choose any server
+else 
+  echo "Wrong Choice. Please try again"
+  ./setup
+fi
+
+wget -O playit https://playit.gg/downloads/playit-0.7.5-beta
+chmod +x *

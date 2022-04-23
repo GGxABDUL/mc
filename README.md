@@ -67,6 +67,10 @@ nano server.properties
 online-mode=false
 ```
 Then, to save it, Press `CTRL + W` and press `Y`
+* Go back to the main project by execute this command
+```
+cd ..
+```
 
 ## Stop your Minecraft Server
 * Execute this Command to stop the Server

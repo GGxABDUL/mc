@@ -1,0 +1,7 @@
+#!/bin/bash
+clear
+# Terminate Message
+echo "Server Stopped!"
+echo "Type ./start to run the Server again"
+echo "Type ./unistall to uninstall your server"
+killall screen

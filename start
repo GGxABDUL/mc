@@ -16,6 +16,7 @@ if [ -f $server/mcserver/server.jar ]; then
 elif [ -f $server/mcserver/bedrock_server ]; then
   cd
   cd mc/mcserver
+  chmod +x *
   screen -L Server ./bedrock_server
 # It will Setup a Server if You don't have the Server
 else 

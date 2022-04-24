@@ -28,7 +28,7 @@ if [[ -z $selectServer ]]; then
   ./setup
 #Execute When the User want to Install Java Server
 
-elif [[ -z $selectServer == 1 ]]; then
+elif [[ $selectServer == 1 ]]; then
   echo "Installing Minecraft Java Server.."
   wget -O server.jar https://launcher.mojang.com/v1/objects/c8f83c5655308435b3dcf03c06d9fe8740a77469/server.jar
   touch eula.txt
@@ -36,7 +36,7 @@ elif [[ -z $selectServer == 1 ]]; then
   mv server.jar mcserver && mv eula.txt mcserver
 #Execute When the User want to Install Bedrock Server
 
-elif [[ -z $selectServer == 2 ]]; then
+elif [[ $selectServer == 2 ]]; then
   echo "Please Type the Version of Minecraft Bedrock Edition Server that you want :"
   read version
   echo "Installing Minecraft Bedrock Server.."

@@ -13,7 +13,7 @@ In this Project, I will teach you the way to host your Minecraft Server on Googl
 * [**Google Cloud**](https://cloud.google.com)
 
 ## Setup your Minecraft Server
-* Activate a [Google Cloud Shell](https://console.cloud.google.com)
+* Activate a [Google Cloud Shell](https://shell.cloud.google.com)
 * Clone this Github Project into the Console
 ```
 git clone https://github.com/GGxABDUL/mc.git

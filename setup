@@ -16,10 +16,10 @@ clear
 
 # Choose Server
 echo "Please Choose what Server that you want to Install"
-selectServer=1
-read selectServer
 echo "Type [1] for Minecraft Java Server"
 echo "Type [2] for Minecraft Bedrock Server"
+selectServer=1
+read selectServer
 
 # Install Server
 if [[ -z selectServer ]]; then

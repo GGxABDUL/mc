@@ -19,5 +19,5 @@ elif [ -f $server/mcserver/bedrock_server ]; then
 else 
   echo "You don't have a Minecraft Server Installed. Installing Minecraft Server.."
   ./setup
-
+echo "to Stop your Minecraft Server, type ./stop"
 screen -L stats bpytop

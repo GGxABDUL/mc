@@ -6,8 +6,8 @@ chmod +x *
 mkdir mcserver
 
 #Installing Variables
-apt update && apt upgrade && pkg update && pkg upgrade
-sudo apt install -y -qq wget screen default-jdk ssh unzip python3.10
+sudo apt update && sudo apt upgrade && sudo pkg update && sudo pkg upgrade
+sudo apt install -y -qq wget screen default-jdk ssh unzip
 
 # Install Bpytop
 python3 pip install bpytop

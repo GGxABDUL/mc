@@ -15,7 +15,7 @@ python3 -m pip install bpytop
 clear
 
 # Choose Server
-echo "Please Choose what Server that you want to Install"
+echo "Please Choose what Server that you want to Install :"
 echo "Type [1] for Minecraft Java Server"
 echo "Type [2] for Minecraft Bedrock Server"
 selectServer=1

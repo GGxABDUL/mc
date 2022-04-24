@@ -9,18 +9,15 @@ sudo apt install screen default-jdk
 
 # Start Java Edition Server
 if [ -f $server/mcserver/server.jar ]; then
-  cd
-  cd mc/mcserver
+  cd mcserver
   screen -L Server java -Xmx2G -Xms2G -jar server.jar nogui
 # Start Bedrock Edition Server
 elif [ -f $server/mcserver/bedrock_server ]; then
-  cd
-  cd mc/mcserver
+  cd mcserver
   chmod +x *
   screen -L Server ./bedrock_server
 # It will Setup a Server if You don't have the Server
 else 
   echo "You don't have a Minecraft Server Installed. Installing Minecraft Server.."
   ./setup
-echo "to Stop your Minecraft Server, type ./stop"
 screen -L stats bpytop

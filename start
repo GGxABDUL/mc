@@ -5,7 +5,7 @@ chmod +x *
 cd $server
 
 # Install Variables
-apt upgrade && apt update && apt install screen default-jdk
+sudo apt install screen default-jdk
 
 # Start Java Edition Server
 if [ -f $server/mcserver/server.jar ]; then

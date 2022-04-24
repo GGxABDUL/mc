@@ -36,7 +36,7 @@ elif [[ -z selectServer == 1 ]]; then
   mv server.jar mcserver && mv eula.txt mcserver
 #Execute When the User want to Install Bedrock Server
 
-elif [[ -z selectServer == 2]]; then
+elif [[ -z selectServer == 2 ]]; then
   echo "Please Type the Version of Minecraft Bedrock Edition Server that you want :"
   read version
   echo "Installing Minecraft Bedrock Server.."

@@ -11,7 +11,7 @@ sudo apt-get install -y -qq wget screen default-jdk ssh unzip python3.9
 
 # Install Bpytop
 python3
-python3 pip install bpytop
+pip3 install bpytop
 
 clear
 

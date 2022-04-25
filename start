@@ -18,3 +18,4 @@ else
   echo "You don't have a Minecraft Server Installed. Installing Minecraft Server.."
   ./setup
 screen -S stats bpytop
+fi

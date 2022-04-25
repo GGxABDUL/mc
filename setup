@@ -57,3 +57,5 @@ fi
 
 wget -O playit https://playit.gg/downloads/playit-0.7.5-beta
 chmod +x *
+clear
+echo "Your Server are ready to Start! Type ./start to start your Server"

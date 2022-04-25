@@ -18,3 +18,6 @@ elif [[ $uninstall == 1 ]] then
   echo "Server deleted! Type ./setup to make a new Server!"
 elif [[ $uninstall == 2 ]]; then 
   echo "Server uninstall cancelled!"
+else 
+  echo "By default, you selected 'No'"
+fi

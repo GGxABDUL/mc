@@ -11,7 +11,7 @@ read uninstall
 # Uninstall
 if [[ -z $uninstall ]]; then
   echo "By default, you selected 'No'"
-elif [[ $uninstall == 1 ]] then
+elif [[ $uninstall == 1 ]]; then
   echo "Deleting you Server.."
   rm -rf mcserver
   killall screen

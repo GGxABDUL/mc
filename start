@@ -4,20 +4,17 @@ export server=$PWD
 chmod +x *
 cd $server
 
-# Install Variables
-sudo apt install screen default-jdk
-
 # Start Java Edition Server
 if [ -f $server/mcserver/server.jar ]; then
   cd mcserver
-  screen -L Server java -Xmx2G -Xms2G -jar server.jar nogui
+  screen -S Server java -Xmx2G -Xms2G -jar server.jar nogui
 # Start Bedrock Edition Server
 elif [ -f $server/mcserver/bedrock_server ]; then
   cd mcserver
   chmod +x *
-  screen -L Server ./bedrock_server
+  screen -S Server ./bedrock_server
 # It will Setup a Server if You don't have the Server
 else 
   echo "You don't have a Minecraft Server Installed. Installing Minecraft Server.."
   ./setup
-screen -L stats bpytop
+screen -S stats bpytop

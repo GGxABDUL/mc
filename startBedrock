@@ -1,4 +1,5 @@
 #!/bin/bash
 set -e
 export server=$PWD
+cd mcserver
 ./bedrock_server

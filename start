@@ -6,10 +6,10 @@ cd $server
 
 # Start Java Edition Server
 if [ -f $server/mcserver/server.jar ]; then
-  screen -S Server -d -m ./startJava
+  screen -S Server -d -m java -Xmx5G -Xms5G -jar server.jar nogui
 # Start Bedrock Edition Server
 elif [ -f $server/mcserver/bedrock_server ]; then
-  screen -S Server -d -m ./startBedrock
+  screen -S Server -d -m ./bedrock_server
 # It will Setup a Server if You don't have the Server
 else 
   echo "You don't have a Minecraft Server Installed. Installing Minecraft Server.."

@@ -7,15 +7,15 @@ cd $server
 # Start Java Edition Server
 if [ -f $server/mcserver/server.jar ]; then
   cd mcserver
-  screen -S -d -m Server java -Xmx2G -Xms2G -jar server.jar nogui
+  screen -S Server -d -m java -Xmx5G -Xms5G -jar server.jar nogui
 # Start Bedrock Edition Server
 elif [ -f $server/mcserver/bedrock_server ]; then
   cd mcserver
   chmod +x *
-  screen -S -d -m Server ./bedrock_server
+  screen -S Server -d -m ./bedrock_server
 # It will Setup a Server if You don't have the Server
 else 
   echo "You don't have a Minecraft Server Installed. Installing Minecraft Server.."
   ./setup
-screen -S -d -m stats bpytop
+screen -S stats -d -m bpytop
 fi
